@@ -1,4 +1,4 @@
-# clear_cdr.py — CDR Directory Normalization Utility
+# clean_cdr.py — CDR Directory Normalization Utility
 
 ## Overview
 
