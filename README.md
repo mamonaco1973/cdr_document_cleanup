@@ -2,7 +2,7 @@
 
 ## Overview
 
-`clear_cdr.py` is a cleanup and normalization tool designed for CDR-style
+`clean_cdr.py` is a cleanup and normalization tool designed for CDR-style
 (Clinical Data Repository) directory exports. These exports often contain
 deeply nested directory trees representing **products**, **studies**, and
 standard subfolders such as:
@@ -75,7 +75,7 @@ cdr/data/driveA/alpha/CBS/
 
 ## What the Script Does
 
-`clear_cdr.py` performs the following tasks:
+`clean_cdr.py` performs the following tasks:
 
 1. Accepts a **root directory** (default: current working directory).
 2. Locates the path `<root>/cdr/data`.
@@ -111,8 +111,8 @@ Specifies the top-level directory that contains the `cdr/` folder.
 **Examples:**
 
 ```
-.\clear_cdr.py -root /tmp
-.\clear_cdr.py -root /
+.\clean_cdr.py -root /tmp
+.\clean_cdr.py -root /
 ```
 
 ---
@@ -129,13 +129,13 @@ moved without modifying the directory tree.
 Dry run (default):
 
 ```
-.\clear_cdr.py -root /
+.\clean_cdr.py -root /
 ```
 
 Live execution:
 
 ```
-.\clear_cdr.py -root / -execute
+.\clean_cdr.py -root / -execute
 ```
 
 ---
@@ -151,7 +151,7 @@ Live execution:
 
 ## When to Use This Script
 
-Use `clear_cdr.py` when:
+Use `clean_cdr.py` when:
 
 - You receive CDR exports with inconsistent file placement.
 - Studies contain loose files mixed with folders.
@@ -165,12 +165,12 @@ Use `clear_cdr.py` when:
 ### Normalize a CDR export inside `/fsx/cdr`:
 
 ```
-.\clear_cdr.py -root /fsx -execute
+.\clean_cdr.py -root /fsx -execute
 ```
 
 ### Validate what would happen without changing anything:
 
 ```
-.\clear_cdr.py -root /fsx
+.\clean_cdr.py -root /fsx
 ```
 
